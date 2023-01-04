@@ -87,5 +87,23 @@
 ## 用UnoCSS实现原子化CSS
 
 - Tailwind 与 UnoCSS 的关系 ？
+  - UnoCSS性能比Tailwind更佳 快 200 倍
 - 怎样在 UnoCSS 中使用变量定制样式 ？
+  - 把样式定义中变量的取值添加到 Safelist 中去
 - 怎样在 UnoCSS 中引入字体图标 ？
+  - 首先在 Unocss 插件中添加 presetIcons 预设 import { presetIcons } from "unocss";
+  - 将使用的图标名加入到 safelist 中
+
+## 创建示例功能的文档网站
+
+- 如何配置 Vitepress 完成文档建设 ？
+  - 添加依赖pnpm i vitepress@"0.22.4" -D
+  - 创建docs/index.md
+  - 添加启动脚本
+  - 配置docs/.vitepress/config.ts进行菜单配置
+- 如何在 vitepress 中引用 vue 组件？
+  - 添加依赖pnpm i vitepress-theme-demoblock@"1.4.2" -D
+  - 配置docs/.vitepress/config.ts 引入demoBlockPlugin插件
+  - 在md中使用:::demo 内容 vue代码段 :::引入markdown 插槽 
+- 什么是 markdown 插槽 ？
+  - Markdown 的功能扩展 可以通过::: slot name ::: 的方式引入
