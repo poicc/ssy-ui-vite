@@ -27,7 +27,9 @@ export default defineConfig({
   //添加库模式配置
   build: {
     rollupOptions,
-    minify: false,
+    minify: 'terser', // boolean | 'terser' | 'esbuild'
+    sourcemap: true, // 输出单独 source文件
+    brotliSize: true,  // 生成压缩大小报告
     cssCodeSplit: true, // 在编译的时候是否要独立输出 css
     lib: {
       entry: "./src/entry.ts",
