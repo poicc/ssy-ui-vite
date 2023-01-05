@@ -1,7 +1,7 @@
 {
-  "name": "ssy-ui-vite",
-  "version": "1.0.0",
-  "description": "",
+  "name": "ssy-poicc-ui-vite",
+  "version": "0.2.0",
+  "description": "基于 Vite 栈的前端工程化实践 - 单元测试 - Github Action - MIT 开源协议 - 建立语义化版本并提交软件包仓库 Npm",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
@@ -46,7 +46,7 @@
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.2.0",
-    "plugin-vue^3.0.4": "link:@vitejs/plugin-vue^3.0.4",
+    "plugin-vue": "link:@vitejs/plugin-vue^3.0.4",
     "prettier": "^2.7.1",
     "typescript": "^4.9.4",
     "unocss": "0.45.6",
