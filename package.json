@@ -24,7 +24,7 @@
   "license": "ISC",
   "devDependencies": {
     "@iconify-json/ic": "^1.1.12",
-    "@vitejs/plugin-vue": "2.3.3",
+    "@vitejs/plugin-vue": "3.0.3",
     "@vitejs/plugin-vue-jsx": "^2.0.0",
     "@vue/test-utils": "2.0.2",
     "cz-customizable": "^7.0.0",
@@ -44,7 +44,7 @@
     "@testing-library/vue": "^6.6.1",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.33.0",
-    "@vitejs/plugin-vue": "^2.3.3",
+    "@vitejs/plugin-vue": "^3.0.3",
     "@vitejs/plugin-vue-jsx": "^2.0.0",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/test-utils": "^2.0.0-rc.20",
@@ -59,7 +59,7 @@
     "prettier": "^2.6.1",
     "terser": "^5.15.1",
     "unocss": "0.45.6",
-    "vite":"^3.0.5",
+    "vite":"^3.0.7",
     "vue": "^3.2.37"
   },
   "config": {
@@ -74,8 +74,7 @@
         "@types/node",
         "react",
         "react-dom",
-        "typescript",
-        "@vue/compiler-sfc"
+        "typescript"
       ]
     }
   }
