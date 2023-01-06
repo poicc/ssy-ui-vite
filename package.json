@@ -74,7 +74,8 @@
         "@types/node",
         "react",
         "react-dom",
-        "typescript"
+        "typescript",
+        "@vue/compiler-sfc"
       ]
     }
   }
