@@ -1,11 +1,10 @@
-<!--
-<template>
+<!-- <template>
   <button>SFC Button</button>
 </template>
 
 <script lang="ts">
-export default {
+import { defineComponent } from "vue";
+export default defineComponent({
   name: "SFCButton",
-};
-</script>
--->
+});
+</script> -->
