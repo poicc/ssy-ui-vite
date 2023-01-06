@@ -19,7 +19,7 @@
 // };
 
 import { App } from "vue";
-import { Button } from "./Button/index";
+import { Button } from "./Button";
 
 // 导出单独组件
 export { Button };
