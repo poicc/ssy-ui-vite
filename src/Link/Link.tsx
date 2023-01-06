@@ -20,9 +20,9 @@ export const props = {
   },
   color: {
     type: String as PropType<IColor>,
-    default: "green",
+    default: "purple",
   },
-};
+}
 
 export default defineComponent({
   name: "SLink",
@@ -47,18 +47,15 @@ export default defineComponent({
     };
 
     return () => (
-      <a
-        class={`
-        px-${size[props.size].y}
-        px-${size[props.size].x}
-        cursor-pointer
-        text-${props.color + "-500"}
-        text-${size[props.size].text}
-        hover:bg-${props.color}-400
-        hover:text-white
-        `}
-      >
-        <span> {slots.default ? slots.default() : "默认链接"}</span>
+      <a class={` 
+              py-${size[props.size].y}
+              px-${size[props.size].x}
+              cursor-pointer
+              text-${props.color + "-500"}
+              text-${size[props.size].text}
+              hover:bg-${props.color}-400
+              hover:text-white`}>
+        <span> {slots.default ? slots.default() : "默认链接"} </span>
       </a>
     );
   },
