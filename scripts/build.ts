@@ -32,7 +32,7 @@ const buildAll = async () => {
       fs.outputFile(
         path.resolve(outDir, `package.json`),
         `{
-            "name": "ssy-ui-vite/${name}",
+            "name": "ssy-poicc-ui-vite/${name}",
             "main": "index.umd.js",
             "module": "index.umd.js"
         }`,
