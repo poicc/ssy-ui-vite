@@ -19,9 +19,7 @@ export const config = {
   plugins: [
     vue(),
     // 添加JSX插件
-    vueJsx({
-      // options are passed on to @vue/babel-plugin-jsx
-    }),
+    vueJsx(),
     // 添加UnoCSS插件
     Unocss(),
   ],
