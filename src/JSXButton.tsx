@@ -1,10 +1,10 @@
-import { defineComponent, h } from "vue";
+// import { defineComponent, h } from "vue";
 
-export default defineComponent({
+// export default defineComponent({
 
-  name: "JSXButton",
-  render() {
-    return <button>JSX Button</button>;
-  },
+//   name: "JSXButton",
+//   render() {
+//     return <button>JSX Button</button>;
+//   },
 
-});
+// });

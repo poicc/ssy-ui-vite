@@ -1,3 +1,4 @@
+<!--
 <template>
   <button>SFC Button</button>
 </template>
@@ -7,3 +8,4 @@ export default {
   name: "SFCButton",
 };
 </script>
+-->
