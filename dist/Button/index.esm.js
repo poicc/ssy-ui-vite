@@ -66,13 +66,13 @@ const Button = defineComponent({
     }, null) : "", slots.default ? slots.default() : ""]);
   }
 });
-const entry = {
+const index = {
   install(app) {
     app.component(Button.name, Button);
   }
 };
 export {
   Button,
-  entry as default
+  index as default
 };
-//# sourceMappingURL=ssy-ui.esm.js.map
+//# sourceMappingURL=index.esm.js.map
