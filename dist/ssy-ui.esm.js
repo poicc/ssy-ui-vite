@@ -1,13 +1,13 @@
 import { defineComponent, createVNode } from "vue";
 const __uno = "";
 const props = {
-  color: {
-    type: String,
-    default: "blue"
-  },
   size: {
     type: String,
     default: "medium"
+  },
+  color: {
+    type: String,
+    default: "blue"
   },
   round: {
     type: Boolean,
@@ -28,6 +28,8 @@ const Button = defineComponent({
   setup(props2, {
     slots
   }) {
+    var _a;
+    console.log(`html`, (_a = document.querySelector(`#app`)) == null ? void 0 : _a.innerHTML);
     const size = {
       small: {
         x: "2",
@@ -55,7 +57,7 @@ const Button = defineComponent({
           border-${props2.color}-${props2.plain ? "500" : "500"}
           cursor-pointer
           border-solid
-          text-${props2.plain ? props2.color + "-500" : "white"}
+          text-${props2.plain ? props2.color + "-500" : "white-500"}
           text-${size[props2.size].text}
           hover:text-white
           transition duration-300 ease-in-out transform hover:scale-105

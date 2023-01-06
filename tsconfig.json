@@ -9,7 +9,8 @@
       "src/shims-vue.d.ts",
   ],
   "exclude": [
-      "node_modules"
+      "node_modules/@types",
+      "@types"
   ],
   "esModuleInterop": true,
   "allowSyntheticDefaultImports": true //允许从没有默认导出的模块引入
