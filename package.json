@@ -43,7 +43,7 @@
     "prettier": "^2.6.1",
     "terser": "^5.15.1",
     "unocss": "0.45.6",
-    "vite":"^3.0.5",
+    "vite":"^3.0.7",
     "vue": "^3.2.37"
   },
   "devDependencies": {
@@ -59,7 +59,7 @@
     "vite": "^3.0.7",
     "vitepress": "^0.22.4",
     "vitepress-theme-demoblock": "1.4.2",
-    "vitest": "^0.14.0"
+    "vitest": "^0.14.2"
   },
   "config": {
     "commitizen": {
