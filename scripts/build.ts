@@ -9,16 +9,16 @@ const buildAll = async () => {
   fs.readdirSync(srcDir)
     .filter((name) => {
       // 只要目录不要文件，且里面包含index.ts
-      const compoentDir = path.resolve(srcDir, name);
-      const isDir = fs.lstatSync(compoentDir).isDirectory();
-      return isDir && fs.readdirSync(compoentDir).includes("index.ts");
+      const componentDir = path.resolve(srcDir, name);
+      const isDir = fs.lstatSync(componentDir).isDirectory();
+      return isDir && fs.readdirSync(componentDir).includes("index.ts");
     })
     .forEach(async (name) => {
       const outDir = path.resolve("./dist", name);
       const custom = {
         lib: {
           entry: path.resolve(srcDir, name),
-          name, //导出模块名
+          name, // 导出模块名
           fileName: `index`,
           formats: [`esm`, `umd`],
         },
@@ -32,10 +32,10 @@ const buildAll = async () => {
       fs.outputFile(
         path.resolve(outDir, `package.json`),
         `{
-        "name": "ssy-ui-vite/${name}",
-        "main": "index.umd.js",
-        "module": "index.umd.js"
-      }`,
+            "name": "ssy-ui-vite/${name}",
+            "main": "index.umd.js",
+            "module": "index.umd.js"
+        }`,
         `utf-8`
       );
     });
