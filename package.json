@@ -17,7 +17,8 @@
     "build": "pnpm build:components",
     "build:all": "vite build",
     "build:components": "esno ./scripts/build.ts",
-    "register:components": "vitepress-rc"
+    "register:components": "vitepress-rc",
+    "coverage": "vitest run --coverage"
   },
   "keywords": [],
   "author": "crq",
