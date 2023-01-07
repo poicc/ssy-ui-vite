@@ -1,0 +1,82 @@
+{
+  "name": "ssy-poicc-ui-vite",
+  "version": "0.2.0",
+  "description": "基于 Vite 栈的前端工程化实践 - 单元测试 - Github Action - MIT 开源协议 - 建立语义化版本并提交软件包仓库 Npm",
+  "main": "index.js",
+  "module": "./dist/ssy-ui.esm.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "lint": "eslint --fix --ext .ts,.vue src",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "prepare": "husky install",
+    "build": "pnpm build:components",
+    "build:all": "vite build",
+    "build:components": "esno ./scripts/build.ts",
+    "register:components": "vitepress-rc"
+  },
+  "keywords": [],
+  "author": "crq",
+  "license": "ISC",
+  "dependencies": {
+    "@commitlint/cli": "17.0.2",
+    "@commitlint/config-conventional": "17.0.2",
+    "@types/fs-extra": "^9.0.13",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.33.0",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vitejs/plugin-vue-jsx": "^2.0.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/test-utils": "^2.0.0-rc.20",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.22.0",
+    "eslint-formatter-pretty": "^4.1.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.2.0",
+    "esno": "^0.16.3",
+    "fs-extra": "^10.1.0",
+    "prettier": "^2.6.2",
+    "terser": "^5.15.1",
+    "unocss": "0.45.6",
+    "vite": "^3.0.7",
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@iconify-json/ic": "^1.1.12",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vitejs/plugin-vue-jsx": "^2.0.0",
+    "@vitest/coverage-c8": "^0.26.3",
+    "@vitest/coverage-istanbul": "^0.26.3",
+    "@vue/test-utils": "2.0.2",
+    "cz-customizable": "^7.0.0",
+    "happy-dom": "6.0.4",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.1",
+    "terser": "5.4.0",
+    "vite": "^3.0.7",
+    "vitepress": "^0.22.4",
+    "vitepress-theme-demoblock": "1.4.2",
+    "vitest": "^0.14.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search",
+        "@types/node",
+        "react",
+        "react-dom",
+        "typescript"
+      ]
+    }
+  }
+}
