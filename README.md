@@ -8,8 +8,12 @@
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/github/license/poicc/ssy-ui-vite?color=green&style=for-the-badge">
+<img src="https://img.shields.io/github/license/poicc/ssy-ui-vite?color=green">
+<a href="https://codecov.io/gh/poicc/ssy-ui-vite" > 
+ <img src="https://codecov.io/gh/poicc/ssy-ui-vite/branch/master/graph/badge.svg?token=ECAAIR953D&style=for-the-badge"/> 
+ </a>
 </p>
+
 
 ## Features
 
