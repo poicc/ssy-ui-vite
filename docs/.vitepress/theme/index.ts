@@ -1,15 +1,18 @@
-import Theme from 'vitepress/dist/client/theme-default'
-import SmartyUI from '../../../src/entry'
+import DefaultTheme from 'vitepress/theme'
 
-// 主题样式
-import 'vitepress-theme-demoblock/theme/styles/index.css'
-import { registerComponents } from './register-components'
+import 'vitepress-theme-demoblock/dist/theme/styles/index.css'
+import Demo from 'vitepress-theme-demoblock/dist/client/components/Demo.vue'
+import DemoBlock from 'vitepress-theme-demoblock/dist/client/components/DemoBlock.vue'
+import SSYUI from '../../../src/entry'
 
+import './styles/var.css';
+import 'uno.css'
 
 export default {
-  ...Theme,
+  ...DefaultTheme,
   enhanceApp({ app }) {
-    app.use(SmartyUI)
-    registerComponents(app)
-  },
+    app.use(SSYUI)
+    app.component('Demo', Demo)
+    app.component('DemoBlock', DemoBlock)
+  }
 }
