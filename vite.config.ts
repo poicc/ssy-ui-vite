@@ -1,9 +1,10 @@
 /// <reference types="vitest" />
-import { defineConfig } from "vite";
+import { defineConfig, Plugin, Plugin_2 } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import UnoCss from "./config/unocss";
 import { UserConfig } from "vitest";
+import dts from "vite-plugin-dts"
 
 const rollupOptions = {
   external: ["vue"],
@@ -16,15 +17,21 @@ const rollupOptions = {
 
 export const config = {
   plugins: [
-    vue(),
-    vueJsx(),
-    UnoCss(),
+    vue() as Plugin_2,
+    vueJsx() as Plugin_2,
+    UnoCss() as Plugin_2[],
+    dts({
+      outputDir: "./dist/types",
+      insertTypesEntry: false, // 插入 ts 入口
+      copyDtsFiles: true // 是否将源码里的 .d.ts文件复制到outputDir
+    })
   ],
   build: {
     rollupOptions,
     minify: `terser`, // boolean | 'terser' | 'esbuild'
     sourcemap: true, // 输出单独 source文件
     brotliSize: true, // 生成压缩大小报告
+    cssCodeSplit: false,
     lib: {
       entry: "./src/entry.ts",
       name: "SSYUI",
@@ -32,7 +39,6 @@ export const config = {
       formats: ["esm", "umd", "iife"], // 导出模块类型
     },
     outDir: "./dist",
-    cssCodeSplit: true
   },
   test: {
     // enable jest-like global test APIs

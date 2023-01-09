@@ -1,5 +1,5 @@
 {
-        "name": "ssy-poicc-ui-vite/Link",
-        "main": "index.umd.js",
-        "module": "index.umd.js"
+            "name": "ssy-ui-vite/Link",
+            "main": "index.umd.js",
+            "module": "index.umd.js"
       }
