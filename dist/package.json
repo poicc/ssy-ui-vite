@@ -2,8 +2,8 @@
   "name": "ssy-poicc-ui-vite",
   "version": "1.2.0",
   "description": "基于 Vite 栈的前端工程化实践 - 单元测试 - Github Action - MIT 开源协议 - 建立语义化版本并提交软件包仓库 Npm",
-  "main": "index.js",
-  "module": "./dist/ssy-ui.esm.js",
+  "main": "ssy-ui.umd.js",
+  "module": "ssy-ui.esm.js",
   "homepage": "https://ssy-ui-vite-one.vercel.app/",
   "scripts": {
     "dev": "vite",
@@ -84,5 +84,6 @@
         "typescript"
       ]
     }
-  }
+  },
+  "types": "ssy-ui.d.ts"
 }
